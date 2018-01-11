@@ -1,0 +1,9 @@
+== Included Section
+=== Included subtitle
+
+some content
+
+[#img-sunset]
+.A mountain sunset
+[link=http://www.flickr.com/photos/javh/5448336655]
+image::instance.png[Sunset,align="center"]

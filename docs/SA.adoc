@@ -1,0 +1,126 @@
+= AsciiDoc Article Title
+Firstname Lastname <author@asciidoctor.org>
+1.0, July 29, 2014, Asciidoctor 1.5 article template
+1.1, July 29, 2014, Asciidoctor 1.5 article template
+1.2, July 29, 2014, Asciidoctor 1.5 article template
+:toc:
+:icons: font
+:quick-uri: http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:icons: font
+:imagesdir: resources/img/
+:numbered:
+:tip-caption: 💡
+:source-highlighter: rouge
+:listing-caption: Listing
+
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+
+== Revision History
+
+[cols=2*]
+|===
+|*Author*
+|
+
+|*Tech review*
+|
+
+|*Quality Review*
+|
+|===
+
+jkljlj
+
+[qanda]
+What is Asciidoctor?::
+  An implementation of the AsciiDoc processor in Ruby.
+What is the answer to the Ultimate Question?:: 42
+
+
+
+== First Section
+
+* item 1
+* item 2
+
+[%header,cols=2*]
+.a table
+|===
+|Name of Column 1
+|Name of Column 2
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|===
+
+[source,ruby,linenums]
+.ruby source code
+puts "Hello, World!"
+
+
+== Second Section
+=== subtitle
+
+[source%autofit,java,linenums]
+.java source code
+----
+@SessionScoped
+public class WidgetRepository {
+    @GET
+    @Produces("application/json")
+    public List<String> listAll(@QueryParam("start") Integer start, @QueryParam("max") Integer max) {
+        ...
+    }
+}
+----
+
+sample icons
+
+icon:tags[] ruby, asciidoctor
+
+icon:tags[role="blue"] ruby, asciidoctor
+
+icon:heart[size=2x]
+
+//callouts
+----
+line of code  // <1>
+line of code  # <2>
+line of code  ;; <3>
+----
+<1> A callout behind a line comment for C-style languages.
+<2> A callout behind a line comment for Ruby, Python, Perl, etc.
+<3> A callout behind a line comment for Clojure.
+
+=== Admonitions
+[TIP]
+It's possible to use Unicode glyphs as admonition icons. see `:tip-caption:`
+[NOTE]
+It's possible to use
+[IMPORTANT]
+It's possible to use
+[WARNING]
+It's possible to use
+[CAUTION]
+It's possible to use
+
+include::includedSection.adoc[]
+
+[#diag2]
+.Sequence diagram
+[blockdiag]
+----
+blockdiag {
+   A -> B -> C -> D;
+   A -> E -> F -> G;
+}
+----
+hhh
+
+[index]
+== Index
